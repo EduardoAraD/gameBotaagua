@@ -1,0 +1,5 @@
+rootProject.name = 'gameBotaagua'
+include ':@react-native-community_async-storage-backend-legacy'
+project(':@react-native-community_async-storage-backend-legacy').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/async-storage-backend-legacy/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
